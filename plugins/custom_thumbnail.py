@@ -57,7 +57,7 @@ async def save_photo(bot, update):
         )
 
 
-@MaI_BoTs.on_message(filters.command(["delthumb"]))
+@Movizenx.on_message(filters.command(["delthumb"]))
 async def delete_thumbnail(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -87,7 +87,7 @@ async def delete_thumbnail(bot, update):
     )
 
 
-@MaI_BoTs.on_message(filters.command(["showthumb"]))
+@Movizenx.on_message(filters.command(["showthumb"]))
 async def show_thumb(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
